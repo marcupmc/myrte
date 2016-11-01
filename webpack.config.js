@@ -24,6 +24,13 @@ module.exports = {
             {
                 test: /\.scss$/i, loader: ExtractTextPlugin.extract('style', 'css!sass'),
             },
+            {
+                test: /\.(jpg|png|gif|svg)$/i,
+                loaders: [
+                    'file?hash=sha512&digest=hex&name=[hash].[ext]',
+                    'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+                ]
+            },
         ],
     },
     plugins: [
