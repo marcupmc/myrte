@@ -10,4 +10,4 @@ deployment:
     branch: master
     commands:
         - npm run build
-        - git push heroku
+        - git push heroku master --force
