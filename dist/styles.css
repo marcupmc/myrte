@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.myrte {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  font-size: 15px; }
+
+ul {
+  list-style-type: none; }
+.nav-bar {
+  height: 70px;
+  width: 100%;
+  display: table; }
+
+.nav-bar__logo {
+  display: table-cell; }
+
+.nav-bar__links {
+  color: white;
+  font-weight: lighter;
+  display: table-cell;
+  text-align: right;
+  vertical-align: middle;
+  padding-right: 50px; }
+  .nav-bar__links li {
+    display: inline;
+    padding: 10px; }
+#main-picture {
+  height: 500px;
+  width: 100%;
+  background-image: url("/assets/images/paris.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  z-index: -1; }
+
+.main-title {
+  padding: 50px;
+  width: 500px;
+  margin: auto;
+  margin-top: 10%;
+  text-align: center;
+  font-style: italic;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+  color: white;
+  border-top: 2px solid  #0055A4;
+  border-bottom: 2px solid #EF4135; }
+
+/*# sourceMappingURL=styles.css.map*/
