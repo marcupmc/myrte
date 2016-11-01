@@ -1,6 +1,6 @@
 dependencies:
   pre:
-    - npm install yarn
+    - npm install -g yarn
     - yarn
   override:
     - npm run build
