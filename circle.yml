@@ -8,5 +8,6 @@ dependencies:
 deployment:
   staging:
     branch: master
-    heroku:
-      appname: myrte
+    commands:
+        - npm run build
+        - git push heroku
