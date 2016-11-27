@@ -1,4 +1,9 @@
-console.log('----Hello World-----');
-require ('../assets/styles/global.scss');
-require ('../assets/styles/components/nav-bar.scss');
-require('../assets/styles/pages/home.scss');
+import React from 'react';
+import { render } from 'react-dom';
+
+import App from './components/App';
+
+render(
+    <App />,
+    document.getElementById('home')
+);
