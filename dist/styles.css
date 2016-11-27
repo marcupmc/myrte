@@ -33,9 +33,9 @@ ul {
     display: inline;
     padding: 10px; }
 #main-picture {
-  height: 500px;
+  height: 100%;
   width: 100%;
-  background-image: url("/assets/images/paris.jpg");
+  background-image: url("/assets/images/home.png");
   background-position: 0 0;
   background-repeat: no-repeat;
   -webkit-background-size: cover;

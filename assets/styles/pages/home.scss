@@ -1,8 +1,8 @@
 @import '../mixins/images.scss';
 #main-picture{
-    height: 500px;
+    height: 100%;
     width: 100%;
-    @include background('/assets/images/paris.jpg');
+    @include background('/assets/images/home.png');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
