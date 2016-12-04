@@ -6,7 +6,9 @@
   "scripts": {
     "start:local": "webpack-dev-server --host=0.0.0.0 --hot --inline --port 8080",
     "test": "echo \"no test task specified\" && exit 0",
-    "build": "webpack --progress --colors"
+    "build": "webpack --progress --colors",
+    "postinstall": "npm run build",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/marcupmc/myrte/issues"
   },
-  "devDependencies": {
+  "dependencies": {
     "babel-core": "^6.17.0",
     "babel-eslint": "^6.1.2",
     "babel-loader": "^6.2.5",
@@ -51,10 +53,8 @@
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
     "timekeeper": "^0.1.1",
-    "webpack": "^1.13.3",
-    "webpack-dev-server": "^1.16.2"
-  },
-  "dependencies": {
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2",
     "history": "^4.3.0",
     "isomorphic-fetch": "^2.2.1",
     "jwt-decode": "^2.1.0",
