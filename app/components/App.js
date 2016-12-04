@@ -8,33 +8,12 @@ import Home from './Home';
 
 require('../../assets/styles/global.scss');
 
-// Needed for onTouchTap
-// http://stackoverflow.com/a/34015469/988941
 injectTapEventPlugin();
 
 const muiTheme = getMuiTheme({
-    datePicker: {
-        selectColor: '#F46329',
-    },
-    flatButton: {
-        primaryTextColor: '#F46329',
-    },
-    tableRow: {
-        selectedColor: '#E8E8E8',
-    },
-    checkbox: {
-        checkedColor: '#F46329',
-    },
-    stepper: {
-        iconColor: '#F46329',
-    },
-    toggle: {
-        thumbOnColor: '#F46329',
-        trackOnColor: '#FFAD8D',
-    },
     baseTheme: {
         palette: {
-            primary3Color: '#FFFFFF',
+            primary1Color: '#0055A4',
         },
     },
 });

@@ -1,0 +1,17 @@
+.process {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:stretch;
+}
+
+.process__element {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+.process__description {
+    padding: 10px;
+}
