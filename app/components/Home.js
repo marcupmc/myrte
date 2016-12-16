@@ -16,14 +16,14 @@ export default class Home extends Component {
     constructor(props) {
         super(props);
     }
- 
+
     render() {
         return (
             <div className="myrte">
                 <div id="main-picture" className="images--full">
                     <NavBar />
                     <div className="main-title">
-                        <span>L'authentique rhum arrangé artisanal</span>
+                        <span>"</span><span>L'authentique rhum arrangé artisanal</span><span>"</span>
                     </div>
                     <div className="center-button__wrapper">
                         <RaisedButton backgroundColor="#0055A4" labelColor='#FFFFFF' label="Voir nos produits" fullWidth={false} />
@@ -33,16 +33,16 @@ export default class Home extends Component {
                     <div style={{textAlign: 'center', padding: '20px', fontSize: '1.6em'}}>Comment ça marche ?</div>
                     <div className="process">
                         <div className="process__element">
-                            <Avatar size={80} icon={<FontIcon className="material-icons" >local_bar</FontIcon>} />
-                            <div className="process__description">Sélectionnez votre rhum</div>
+                            <Avatar src="../../assets/images/step1.jpg" size={90} icon={<FontIcon className="material-icons" >local_bar</FontIcon>} />
+                            <div className="process__description">Sélectionnez vos ingrédients</div>
                         </div>
                         <div className="process__element">
-                            <Avatar size={80} icon={<FontIcon className="material-icons" >build</FontIcon>} />
-                            <div className="process__description">Préparation Artisanale du rhum</div>
+                            <Avatar src="../../assets/images/step2.jpg" size={90} icon={<FontIcon className="material-icons" >build</FontIcon>} />
+                            <div className="process__description">Nous préparons votre rhum arrangé</div>
                         </div>
                         <div className="process__element">
-                            <Avatar size={80} icon={<FontIcon className="material-icons" >directions_bike</FontIcon>} />
-                            <div className="process__description">Livraison à Domicile</div>
+                            <Avatar src="../../assets/images/step3.jpg" size={90} icon={<FontIcon className="material-icons" >directions_bike</FontIcon>} />
+                            <div className="process__description">Livraison sous 3 semaines</div>
                         </div>
                     </div>
                 </div>

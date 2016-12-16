@@ -2,11 +2,8 @@
 #main-picture{
     max-height: 500px;
     width: 100%;
-    @include background('/assets/images/home_paris.jpeg');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    @include background('/assets/images/home.jpg');
+    background-size: 100% 145%;
     position: relative;
 }
 

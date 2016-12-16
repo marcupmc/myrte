@@ -6,7 +6,7 @@ require ('../../assets/styles/components/nav-bar.scss');
 const NavBar = () => (
     <div className="nav-bar">
         <div className="nav-bar__logo">
-            <img src="assets/images/logo.png"/>
+            <img src="assets/images/logo.png" style={{width: '260px'}}/>
         </div>
         <div className="nav-bar__links">
             <ul>
