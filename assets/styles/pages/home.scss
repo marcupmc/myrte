@@ -2,9 +2,9 @@
 #main-picture{
     max-height: 500px;
     width: 100%;
-    @include background('/assets/images/home.jpg');
-    background-size: 100% 145%;
-    position: relative;
+    @include background('/assets/images/paris.jpeg');
+    background-position: 0 -145px;
+    background-size: cover;
 }
 
 .main-title {
