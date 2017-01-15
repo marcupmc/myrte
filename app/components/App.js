@@ -5,6 +5,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 import Home from './Home';
+import Shop from './Shop';
 
 require('../../assets/styles/global.scss');
 
@@ -22,6 +23,8 @@ const App = () => (
     <MuiThemeProvider muiTheme={muiTheme}>
         <Router history={browserHistory}>
             <Route path="/" component={Home}>
+            </Route>
+            <Route path="/products" component={Shop}>
             </Route>
         </Router>
     </MuiThemeProvider>

@@ -26,7 +26,7 @@ export default class Home extends Component {
                         <span>"</span><span>L'authentique rhum arrangé artisanal</span><span>"</span>
                     </div>
                     <div className="center-button__wrapper">
-                        <RaisedButton backgroundColor="#0055A4" labelColor='#FFFFFF' label="Voir nos produits" fullWidth={false} />
+                        <RaisedButton href='/products' backgroundColor="#0055A4" labelColor='#FFFFFF' label="Voir nos produits" fullWidth={false} />
                     </div>
                 </div>
                 <div className="how_it_works">
