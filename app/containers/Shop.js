@@ -7,7 +7,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 
 import NavBar from '../components/NavBar';
 
-import fetchProducts from '../actions/products';
+import { fetchProducts } from '../actions/products';
 
 require('../../assets/styles/components/nav-bar.scss');
 require('../../assets/styles/pages/home.scss');
@@ -42,7 +42,7 @@ export class Shop extends Component {
                     <h3>Coming soon, some products...</h3>
                     {
                         _.map(products, p =>
-                            <div>{p.name}</div>
+                            <div key={p.name}>{p.name}</div>
                         )
                     }
                 </div>

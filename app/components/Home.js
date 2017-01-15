@@ -5,7 +5,7 @@ import FontIcon from 'material-ui/FontIcon';
 import NavBar from './NavBar';
 import RaisedButton from 'material-ui/RaisedButton';
 
-require ('../../assets/styles/components/nav-bar.scss');
+require('../../assets/styles/components/nav-bar.scss');
 require('../../assets/styles/pages/home.scss');
 require('../../assets/styles/molecules/center-button.scss');
 require('../../assets/styles/molecules/process.scss');
@@ -26,11 +26,11 @@ export default class Home extends Component {
                         <span>"</span><span>L'authentique rhum arrangé artisanal</span><span>"</span>
                     </div>
                     <div className="center-button__wrapper">
-                        <RaisedButton href='/products' backgroundColor="#0055A4" labelColor='#FFFFFF' label="Voir nos produits" fullWidth={false} />
+                        <RaisedButton href="/products " backgroundColor="#0055A4" labelColor="#FFFFFF" label="Voir nos produits" fullWidth={false} />
                     </div>
                 </div>
                 <div className="how_it_works">
-                    <div style={{textAlign: 'center', padding: '20px', fontSize: '1.6em'}}>Comment ça marche ?</div>
+                    <div style={{ textAlign: 'center', padding: '20px', fontSize: '1.6em' }}>Comment ça marche ?</div>
                     <div className="process">
                         <div className="process__element">
                             <Avatar src="../../assets/images/step1.jpg" size={90} icon={<FontIcon className="material-icons" >local_bar</FontIcon>} />

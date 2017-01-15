@@ -1,5 +1,4 @@
-import * as productsActions from '../constants/productsActions';
-
+import productsActions from '../constants/productsActions';
 
 export function fetchProducts() {
     return {
