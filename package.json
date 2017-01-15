@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "dev:local": "webpack-dev-server --host=0.0.0.0 --hot --inline --port 8082",
+    "start:local": "webpack-dev-server --host=0.0.0.0 --hot --inline --port 8080",
     "test": "echo \"no test task specified\" && exit 0",
     "build": "webpack --progress --colors",
     "postinstall": "npm run build",
