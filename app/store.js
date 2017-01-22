@@ -16,7 +16,7 @@ export function Store(initialState = {}) {
 }
 
 const INITIAL_STATE = {
-    products: { fetching: false, allProducts: [{ name: 'toto' }, { name: 'titi' }] },
+    products: { fetching: false, allProducts: [] },
 };
 
 const store = new Store(INITIAL_STATE);

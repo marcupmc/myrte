@@ -39,8 +39,9 @@ module.exports = {
     resolve: {
         app: path.resolve(__dirname, './app'),
     },
-    devtool: '#cheap-source-map',
+    devtool: 'eval',
     devServer: {
+        headers: { 'Access-Control-Allow-Origin': '*' },
         port: 8080,
         historyApiFallback: {
             index: 'index.html',

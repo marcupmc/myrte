@@ -7,6 +7,12 @@ export default function products(state = {}, action) {
             ...state,
             fetching: true,
         };
+    case productsAction.FETCH_PRODUCTS_SUCCESS:
+        return {
+            ...state,
+            allProducts: action.data,
+            fetching: false,
+        };
     default:
         return state;
     }
