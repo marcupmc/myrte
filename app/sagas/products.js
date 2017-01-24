@@ -5,7 +5,7 @@ import productsAction from '../constants/productsActions';
 
 export function* fetchProducts() {
     let products;
-    yield fetch('http://api-myrte.herokuapp.com/products', {
+    yield fetch('https://api-myrte.herokuapp.com/products', {
         method: 'GET',
         headers: {
             Accept: 'application/json',
