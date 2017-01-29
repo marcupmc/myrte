@@ -6,6 +6,7 @@ import FontIcon from 'material-ui/FontIcon';
 import RaisedButton from 'material-ui/RaisedButton';
 
 import NavBar from '../components/NavBar';
+import Product from '../components/Product';
 
 import { fetchProducts } from '../actions/products';
 
@@ -38,13 +39,15 @@ export class Shop extends Component {
         return (
             <div className="shop">
                 <NavBar />
-                <div>
-                    <h3>Coming soon, some products...</h3>
-                    {
-                        _.map(products, p =>
-                            <div key={p.name}>{p.name}</div>
-                        )
-                    }
+                <div style={{ width: '600px', margin: 'auto' }}>
+                    <div style={{ textAlign: 'center' }}><h3>Coming soon, some products...</h3></div>
+                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                        {
+                            _.map(products, (p, index) =>
+                                <Product product={p} key={index} />
+                            )
+                        }
+                    </div>
                 </div>
             </div>
         );

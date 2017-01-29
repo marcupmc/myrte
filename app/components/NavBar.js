@@ -1,6 +1,5 @@
 import React, { PropTypes } from 'react';
 import _ from 'lodash';
-
 require ('../../assets/styles/components/nav-bar.scss');
 
 const NavBar = () => (
