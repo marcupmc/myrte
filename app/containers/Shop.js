@@ -37,10 +37,12 @@ export class Shop extends Component {
     render() {
         const { products } = this.props;
         return (
-            <div className="shop">
+            <div className="shop" style={{ background: '#F5F3EE', height: '100vh' }}>
                 <NavBar />
                 <div style={{ width: '600px', margin: 'auto' }}>
-                    <div style={{ textAlign: 'center' }}><h3>Coming soon, some products...</h3></div>
+                    <div style={{ textAlign: 'center', fontFamily: 'Petit Formal Script', fontSize: '2.3em' }}>
+                        <h3>Nos meilleurs produits</h3>
+                    </div>
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                         {
                             _.map(products, (p, index) =>
@@ -60,7 +62,7 @@ Shop.propTypes = {
 };
 
 function mapStateToProps(state) {
-    const products = _.get(state, 'products.allProducts');
+    const products = _.orderBy(_.get(state, 'products.allProducts'), 'position');
     const isFetching = _.get(state, 'products.fetching');
     return {
         products,
