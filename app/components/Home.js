@@ -20,7 +20,7 @@ export default class Home extends Component {
     render() {
         return (
             <div className="myrte">
-                <div id="main-picture" className="images--full">
+                <div className="main-picture images--full">
                     <NavBar />
                     <div className="main-title">
                         <span>"</span><span>L'authentique rhum arrangé artisanal</span><span>"</span>

@@ -37,11 +37,11 @@ export class Shop extends Component {
     render() {
         const { products } = this.props;
         return (
-            <div className="shop" style={{ background: '#F5F3EE', height: '100vh' }}>
+            <div className="shop main-picture main-picture--blur images--full" style={{ height: '100vh' }}>
                 <NavBar />
                 <div style={{ width: '600px', margin: 'auto' }}>
                     <div style={{ textAlign: 'center', fontFamily: 'Petit Formal Script', fontSize: '2.3em' }}>
-                        <h3>Nos meilleurs produits</h3>
+                        <h3 style={{ color: '#FFFFFF' }}>Nos meilleurs produits</h3>
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                         {

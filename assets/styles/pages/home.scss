@@ -1,10 +1,14 @@
 @import '../mixins/images.scss';
-#main-picture{
-    max-height: 500px;
+.main-picture{
+    height: 100%;
     width: 100%;
     @include background('/assets/images/paris.jpeg');
     background-position: 0 -145px;
     background-size: cover;
+}
+
+.main-picture--blur{
+    @include background('/assets/images/paris_blur.png');
 }
 
 .main-title {
